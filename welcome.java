@@ -9,8 +9,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import welcomePg.Admin;
 import welcomePg.Employee;
-import welcomePg.Supplier; 
-import welcomePg.SignUp;
+
 
 /**
  *
@@ -39,10 +38,8 @@ public class welcome extends javax.swing.JFrame {
         jbtnEmployee = new javax.swing.JButton();
         jbtnExit = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jbtnSignUp = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jbtnSupplier = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,7 +53,7 @@ public class welcome extends javax.swing.JFrame {
                 jbtnAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jbtnAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 109, -1));
+        jPanel1.add(jbtnAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 109, -1));
 
         jbtnEmployee.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jbtnEmployee.setText("Employee");
@@ -66,7 +63,7 @@ public class welcome extends javax.swing.JFrame {
                 jbtnEmployeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jbtnEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 109, -1));
+        jPanel1.add(jbtnEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 109, -1));
 
         jbtnExit.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jbtnExit.setText("Exit");
@@ -76,37 +73,19 @@ public class welcome extends javax.swing.JFrame {
                 jbtnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(jbtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 470, 109, 33));
+        jPanel1.add(jbtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 109, 33));
 
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jbtnSignUp.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jbtnSignUp.setText("Sign Up");
-        jbtnSignUp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbtnSignUpActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jbtnSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 390, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 50)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DUKA NDOGO.");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, 45));
 
-        jbtnSupplier.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jbtnSupplier.setText("Supplier");
-        jbtnSupplier.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbtnSupplierActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jbtnSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\GraceJoy Kanyanya\\Downloads\\1280x720-data_out_88_164796499-store-wallpapers (1).jpg")); // NOI18N
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 950, 510));
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\GraceJoy Kanyanya\\Downloads\\1280x720-data_out_88_164796458-store-wallpapers.jpg")); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 520));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,7 +102,7 @@ public class welcome extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
-        
+        System.exit(0);
     }//GEN-LAST:event_jbtnExitActionPerformed
 
     private void jbtnAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnAdminActionPerformed
@@ -135,16 +114,6 @@ public class welcome extends javax.swing.JFrame {
         Employee info = new Employee ();
         info.setVisible (true);
     }//GEN-LAST:event_jbtnEmployeeActionPerformed
-
-    private void jbtnSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSupplierActionPerformed
-        Supplier info = new Supplier ();
-        info.setVisible (true);
-    }//GEN-LAST:event_jbtnSupplierActionPerformed
-
-    private void jbtnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSignUpActionPerformed
-        SignUp info = new SignUp ();
-        info.setVisible (true);
-    }//GEN-LAST:event_jbtnSignUpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,14 +151,14 @@ public class welcome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton jbtnAdmin;
     private javax.swing.JButton jbtnEmployee;
     private javax.swing.JButton jbtnExit;
-    private javax.swing.JButton jbtnSignUp;
-    private javax.swing.JButton jbtnSupplier;
     // End of variables declaration//GEN-END:variables
 }
+
+
